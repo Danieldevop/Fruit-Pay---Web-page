@@ -1,18 +1,19 @@
 body{
-    background: white;
-    margin: 0;
-    font-family: 'Ubuntu Condensed', sans-serif;
+  background: #C9D9E8;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 .header{
   background: #f1f7f9;
-
+  border-bottom: 1px solid  #7893FA;
 }
 a:link {
   text-decoration: none;
+  padding: 5px;
 }
 .logotype{
-  display: inline-block;
-  margin-left: 30px;
+  text-align: center;
+  margin-left: 45%;
 }
 .menu{
   font-size: 27px;
@@ -25,28 +26,42 @@ a:link {
   text-decoration: none;
 }
 .menu a{
-  color: #25e16d;
+  color: #32325D;
 }
 .paraph{
   position: relative;
-  margin-right: 80px;
+  margin-right: 60px;
   color: #3c3c3c;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 .paraph h1{
-  color: #25e16d;
+  color: #43458B;
+  margin-bottom: -30px;
+  display: inline-block;
 }
 .footer p{
   text-align: center;
-  color: #5b48b0;
+  color: #43458B;
   font-size: 18px;
   margin-top: 300px;
+  border-top: 3px solid #6772E5;
+  padding-top: 60px;
 }
 .section{
   padding: 100px;
   border-top: 5px solid  #7893FA;
 }
 .card{
+  display: inline-block;
   float: left;
+  margin-top: -10px;
+}
+.btn{
+  font-size: 30px;
+  border-radius: 15px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 20px 50px 20px 50px;
 }

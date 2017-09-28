@@ -2,15 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Product</title>
+    <title>Seebaly: test our product</title>
     <link rel="stylesheet" href="seebalypay.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
   </head>
   <body>
     <header class="header">
-        <figure class="logotype">
-          <img src="seebaly.png" alt="Logotype" width="150" height="">
-        </figure>
+      <img class="logotype" src="seebaly.png" alt="Logotype" width="200" height="">
       <nav class="menu">
         <ul>
           <li>
@@ -21,15 +19,15 @@
         </ul>
       </nav>
     </header>
-    <form>
-      <img src="seebaly.png" alt="seebaly" width="300" height="" class="logo">
+    <form class="pay">
+      <img class="logo" src="seebaly.png" alt="seebaly" width="300" height="">
       <div class="group">
         <label>
           <span>Nombre</span>
           <input name="cardholder-name" class="field" placeholder="Nombre Apellido" />
         </label>
         <label>
-          <span>Cel</span>
+          <span>Celular</span>
           <input class="field" placeholder="(+57) 3113943129" type="tel" />
         </label>
       </div>
@@ -43,11 +41,15 @@
       <div class="outcome">
         <div class="error" role="alert"></div>
         <div class="success">
-          Success! Your Stripe token is <span class="token"></span>
+          Success! Your Seebaly Id is <span class="token"></span>
         </div>
       </div>
     </form>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="seebaly.js"></script>
+    <footer>
+      <img class="pie" src="planet.png" width="" height="500px" alt="Logo-planet">
+      <p>Seebaly 2017 all rights Reserved</p>
+    </footer>
   </body>
 </html>

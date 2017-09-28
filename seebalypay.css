@@ -1,6 +1,7 @@
 body{
-    margin: 0;
-    font-family: 'Ubuntu Condensed', sans-serif;
+  background: #F2F4F7;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 .header{
   background: #f1f7f9;
@@ -8,10 +9,11 @@ body{
 }
 a:link {
   text-decoration: none;
+  padding: 5px;
 }
 .logotype{
-  display: inline-block;
-  margin-left: 30px;
+  text-align: center;
+  margin-left: 45%;
 }
 .menu{
   font-size: 27px;
@@ -24,15 +26,18 @@ a:link {
   text-decoration: none;
 }
 .menu a{
-  color: #25e16d;
+  color: #32325D;
 }
 .logo{
   margin-left: 90px;
+  margin-top: -30px;
   position: relative;
 }
-form {
+.pay{
   width: 480px;
-  margin: 200px auto;
+  margin: 100px auto;
+  border: 2px solid #7893FA;
+  border-radius: 10px;
 }
 
 .group {
@@ -45,8 +50,8 @@ form {
 
 label {
   position: relative;
-  color: #8898AA;
-  font-weight: 300;
+  color: #6C6C6C;
+  font-weight: 320;
   height: 40px;
   line-height: 40px;
   margin-left: 20px;
@@ -54,7 +59,7 @@ label {
 }
 
 .group label:not(:last-child) {
-  border-bottom: 1px solid #F0F5FA;
+  border-bottom: 4px solid #F0F5FA;
 }
 
 label > span {
@@ -84,14 +89,14 @@ label > span {
 button {
   float: left;
   display: block;
-  background: #25e16d;
+  background: #6670E3;
   color: white;
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
-  border-radius: 6px;
+  border-radius: 7px;
   border: 0;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   width: 100%;
   height: 40px;
@@ -100,7 +105,7 @@ button {
 }
 
 button:focus {
-  background: #555ABF;
+  background: #fd324e;
 }
 
 button:active {
@@ -134,5 +139,17 @@ button:active {
 
 .success .token {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
+}
+footer{
+  background-color: white;
+  border-top: 3px solid #7893FA;
+}
+.pie{
+  margin-left: 33%;
+}
+footer p{
+  text-align: center;
+  color: #43458B;
+  font-size: 18px;
 }
