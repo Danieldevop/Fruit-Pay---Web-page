@@ -1,11 +1,11 @@
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;  
-  background: linear-gradient(135deg, #F2F5F8 0%, #FFFFFF 100%); 
+  background: linear-gradient(135deg, #F4F7F9 0%,  #DEEAF7 100%);
 }
 .header{
   display: flex;                      
-  background: linear-gradient(135deg, #5456A1 0%, #50A7EC 100%); 
+  background: linear-gradient(135deg, #5456A1 30%, #50A7EC 100%); 
 }
 a:link {
   text-decoration: none;
@@ -43,6 +43,8 @@ a:link {
 }
 .section2{
   display: flex;
+  background: linear-gradient(135deg, #0D1A3C 0%,  #79496E 100%);
+
 }
 .concept{
   font-size: 27px;
@@ -65,11 +67,12 @@ a:link {
   display: inline-block;
   width: 500px;
   margin: auto;
-  margin-bottom: 150px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   padding-top: 100px;
   padding: 50px 30px 100px 30px;
   border-radius: 30px;
-  background: linear-gradient(135deg, #6174DE 0%,  #F6963C 100%);
+  background: linear-gradient(135deg, #414141 0%,  #623E7B 100%);
 }
 span{
   color: white;
@@ -189,7 +192,7 @@ button:active {
     margin: auto;
  }
  footer{
-  background: linear-gradient(135deg, #5456A1 0%, #50A7EC 100%); 
+  background: linear-gradient(135deg, #50A7EC 30%, #5456A1 100%);
   padding-top: 50px;
 }
 footer p{
