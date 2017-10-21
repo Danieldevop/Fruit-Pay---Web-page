@@ -1,11 +1,11 @@
 body{
   margin: 0;
-  font-family: 'Montserrat', sans-serif;  
-  background: linear-gradient(135deg, #F4F7F9 0%,  #DEEAF7 100%);
+  font-family: 'Montserrat', sans-serif;
+  background: #F3F3F3;
 }
 .header{
-  display: flex;                      
-  background: linear-gradient(135deg, #5456A1 30%, #50A7EC 100%); 
+  display: flex;
+  background: #1FA3FF;
 }
 a:link {
   text-decoration: none;
@@ -27,7 +27,7 @@ a:link {
 .paraph{
   position: relative;
   margin-right: 60px;
-  color: #303030;
+  color: #383838;
   text-align: center;
   font-size: 1.8em;
   line-height: 1.5em;
@@ -39,22 +39,22 @@ a:link {
   font-size: 50px;
 }
 .section{
-  padding: 50px;
+  padding: 1px;
 }
 .section2{
   display: flex;
-  background: linear-gradient(135deg, #0D1A3C 0%,  #79496E 100%);
+  
 
 }
 .concept{
   font-size: 27px;
-  color: white;
+  color: #1FA3FF;
   text-align: center;
 }
 .test_card{
   line-height: 0.1em;
   font-size: 16px;
-  color: white;
+  color: #373737;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -66,13 +66,13 @@ a:link {
 .pay{
   display: inline-block;
   width: 500px;
+  height: 500px;
   margin: auto;
-  margin-top: 200px;
   margin-bottom: 200px;
   padding-top: 100px;
-  padding: 50px 30px 100px 30px;
+  padding: 5px 30px 100px 30px;
   border-radius: 30px;
-  background: linear-gradient(135deg, #414141 0%,  #623E7B 100%);
+  background: #C4CFD5;
 }
 span{
   color: white;
@@ -125,14 +125,14 @@ label > span {
 
 button {
   float: left;
-  display: block;
+  dibplay: block;
   background: #6670E3;
   color: white;
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
   border-radius: 7px;
   border: 0;
-  
+
   font-size: 20px;
   font-weight: 400;
   width: 100%;
@@ -192,12 +192,12 @@ button:active {
     margin: auto;
  }
  footer{
-  background: linear-gradient(135deg, #50A7EC 30%, #5456A1 100%);
+  background: #303030;
   padding-top: 50px;
 }
 footer p{
   text-align: center;
-  font-size: 18px; 
+  font-size: 18px;
   color: white;
   margin: 0;
   padding-bottom: 50px;
