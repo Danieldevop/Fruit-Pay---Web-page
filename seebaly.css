@@ -1,11 +1,11 @@
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #F3F3F3;
+  background: white;
 }
 .header{
   display: flex;
-  background: #1FA3FF;
+  background: #AFD9F7;
 }
 a:link {
   text-decoration: none;
@@ -21,7 +21,7 @@ a:link {
 }
 .menu a{
   text-align: center;
-  color: #FFFFFF;
+  color: #161E2A;
 }
 
 .paraph{
@@ -48,7 +48,7 @@ a:link {
 }
 .concept{
   font-size: 27px;
-  color: #1FA3FF;
+  color: #00CEE1;
   text-align: center;
 }
 .test_card{
@@ -72,7 +72,7 @@ a:link {
   padding-top: 100px;
   padding: 5px 30px 100px 30px;
   border-radius: 30px;
-  background: #C4CFD5;
+  background: #EFF7F9;
 }
 span{
   color: white;
@@ -125,8 +125,8 @@ label > span {
 
 button {
   float: left;
-  dibplay: block;
-  background: #6670E3;
+  display: block;
+  background: #00CCE4;
   color: white;
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
@@ -184,15 +184,18 @@ button:active {
 
  .weare{
   font-size: 16px;
-  color: white;
+  color: #00CCE4;
   text-align: center;
+ }
+ .weare2{
+  color: #00CCE4;
  }
  .space{
     display: flex;
     margin: auto;
  }
  footer{
-  background: #303030;
+  background: #E1F5F8;
   padding-top: 50px;
 }
 footer p{
@@ -205,7 +208,7 @@ footer p{
 h3{
   text-align: center;
   font-size: 40px;
-  color: #34365B;
+  color: #161e2a;
 }
 .contact_us{
   width: 500px;
