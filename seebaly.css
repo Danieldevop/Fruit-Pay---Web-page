@@ -1,11 +1,13 @@
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: white;
+  background: #F5F9FC;
 }
 .header{
   display: flex;
-  background: #AFD9F7;
+  background: white;
+  /*border-bottom: 1px solid #2B2C27;*/
+  box-shadow: 0px 3px 4px #B8C4C6;
 }
 a:link {
   text-decoration: none;
@@ -48,13 +50,13 @@ a:link {
 }
 .concept{
   font-size: 27px;
-  color: #00CEE1;
+  color: white;
   text-align: center;
 }
 .test_card{
   line-height: 0.1em;
-  font-size: 16px;
-  color: #373737;
+  font-size: 12px;
+  color: white;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -64,6 +66,7 @@ a:link {
   margin-bottom: 30px
 }
 .pay{
+  box-shadow: -5px 7px 10px #B8C4C6;
   display: inline-block;
   width: 500px;
   height: 500px;
@@ -71,8 +74,8 @@ a:link {
   margin-bottom: 200px;
   padding-top: 100px;
   padding: 5px 30px 100px 30px;
-  border-radius: 30px;
-  background: #EFF7F9;
+  border-radius: 20px;
+  background: #161616;
 }
 span{
   color: white;
@@ -126,7 +129,7 @@ label > span {
 button {
   float: left;
   display: block;
-  background: #00CCE4;
+  background: linear-gradient(to left, #00CCE4, #4643F6 );
   color: white;
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
@@ -196,6 +199,7 @@ button:active {
     margin: auto;
  }
  footer{
+  border-top: 2px solid #03C9E2;
   background: #E1F5F8;
   padding-top: 50px;
 }
@@ -220,6 +224,14 @@ h3{
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
   border-radius: 5px;
+}
+.cname{
+  color: #1B242D;
+  margin-left: 10px;
+}
+.cmail{
+  color: #1B242D;
+  margin-left: 10px;
 }
 input{
   background: transparent;
