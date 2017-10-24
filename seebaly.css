@@ -6,6 +6,8 @@ body{
 .header{
   display: flex;
   background: white;
+  padding-bottom: 40px;
+  padding-top: 20px;
   /*border-bottom: 1px solid #2B2C27;*/
   box-shadow: 0px 3px 4px #B8C4C6;
 }
@@ -14,16 +16,11 @@ a:link {
 }
 .menu{
   margin: 0 auto;
-  text-align: center;
-  font-size: 50px;
-}
-.menu li{
-  display: inline-block;
-
 }
 .menu a{
-  text-align: center;
+
   color: #161E2A;
+  font-size: 60px;
 }
 
 .paraph{
@@ -35,10 +32,6 @@ a:link {
   line-height: 1.5em;
   padding: 0;
   margin: 0 0 1em;
-}
-.see{
-  color: #6174DE;
-  font-size: 50px;
 }
 .section{
   padding: 1px;
@@ -188,7 +181,7 @@ button:active {
 
  .weare{
   font-size: 16px;
-  color: #00CCE4;
+  color: white;
   text-align: center;
  }
  .weare2{
@@ -200,7 +193,7 @@ button:active {
  }
  footer{
   border-top: 2px solid #03C9E2;
-  background: #E1F5F8;
+  background: #06080b;
   padding-top: 50px;
 }
 footer p{
