@@ -1,79 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Seebaly: easy and fast payments around the world</title>
-    <link rel="stylesheet" href="seebaly.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-    <!-- start -->
-    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-		0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-		for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-		mixpanel.init("226b3e51048dbc2b307495af580f51eb");</script>
-  <!-- end -->
-  </head>
-  <body>
-    <header class="header">
-      <nav class="menu">
-        <a href="index.html"><img src="Imagenes/Seebaly.png" width="250" height=""></a>
-      </nav>
-    </header>
-      <section class="section">
-        <div class="paraph">
-        <p>Easy and cool payments<br> in locals web and e-commerce.</p>
-        </div>
-      </section>
-      <section class="section2">
-      <form class="pay">
-      	<p class="concept"><strong>Demo</strong></p>
-        <p class="test_card">use this card to test: ‎4242 4242 4242 4242</p>
-      	<img class="imagen2" src="Imagenes/bag.png" atl="img_1" width="200" height="200">
-      <div class="group">
-        <label>
-          <span>Name</span>
-          <input class="field" name="cardholder-name" placeholder="Name and last name" />
-        </label>
-        <label>
-          <span>Phone</span>
-          <input class="field" placeholder="(+57) 3113943129" type="tel" />
-        </label>
-      </div>
-      <div class="group">
-        <label>
-          <span>Card</span>
-          <div id="card-element" class="field"></div>
-        </label>
-      </div>
-      <div>
-        <button type="submit"><strong>Pay</strong></button>
-      </div>
-      <div class="outcome">
-        <div class="error" role="alert"></div>
-        <div class="success">
-          Success! Your Seebaly Id is <span class="token"></span>
-        </div>
-      </div>
-    </form>
-    <script src="https://js.stripe.com/v3/"></script>
-    </section>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Seebaly el datáfono dígital para realizar pagos en el mundo real</title>
+		<link rel="stylesheet" href="css/seebaly.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+	</head>
+  	<body>
+    	<header class="header sticky-top">
+      		<nav class="navbar navbar-expand-md navbar-dark ">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/s2x.png" width="50" height="">
+						<span class="h4 text-light align-middle">Seebaly</span> 
+					</a>
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+						<i class="fa fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar1">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a class="nav-link text-light font-weight-bold" href="">Precio</a></li>
+							<li class="nav-item"><a class="nav-link text-light font-weight-bold ml-md-4" href="">Demo</a></li>
+						</ul>
+					</div>
+				</div>
+      		</nav>
+		</header>
+      	
+        <div class="container display-5 mb-5 space">
+			<img class="rounded mx-auto d-block" src="img/sp.png" alt="Seebaly Pay" width="450">
+			<p class="h1 text-center mt-3 font-weight-bold">El datáfono dígital para realizar pagos en el mundo real.</p>
+			<div class="d-flex justify-content-center">
+					<button class="btn btn-lg btn1 px-5 mt-5"><strong>Conoce más</strong></button>
+			</div>
+			<img class="mt-5" src="img/2xpay.png" alt="" width="490">
+		</div>
+		
+		
+		
+			
+      	<section class="sect1">
+      		<form class="container d-block">
+      			<p class=""><strong>Demo</strong></p>
+        		<p class="">use this card to test: ‎4242 4242 4242 4242</p>
+      			<img class="" src="img/bag.png" atl="img_1" width="200" height="200">
+      			<div class="">
+        			<label>
+          				<span>Name</span>
+          				<input class="" name="cardholder-name" placeholder="Name and last name" />
+        			</label>
+        			<label>
+          				<span>Phone</span>
+          				<input class="" placeholder="(+57) 3113943129" type="tel" />
+        			</label>
+      			</div>
+      			<div class="">
+        			<label>
+          				<span>Card</span>
+          				<div id="card-element" class=""></div>
+        			</label>
+      			</div>
+      			<div>
+        			<button type="submit"><strong>Pay</strong></button>
+      			</div>
+      			<div class="">
+        			<div class="" role="alert"></div>
+        			<div class="">
+          				Success! Your Seebaly Id is <span class=""></span>
+        			</div>
+      			</div>
+    		</form>
+    
+		</section>
+		
         <h3>contact us</h3>
-        <form class="contact_us">
-          <label for="name">
-          <span class="cname">Name</span>
-          <input type="text" required placeholder="Nombre Apellido" id="name">
-          </label>
-          <label for="mail">
-          <span class="cmail">Mail</span>
-          <input type="email" required placeholder="mail@example.com" id="mail">
-          </label>
-          <button type="submit" class="btn"><strong>send</strong></button>
+        <form class="">
+			<label for="name">
+				<span class="">Name</span>
+				<input type="text" required placeholder="Nombre Apellido" id="name">
+			</label>
+			<label for="mail">
+				<span class="">Mail</span>
+				<input type="email" required placeholder="mail@example.com" id="mail">
+			</label>
+			<button type="submit" class=""><strong>send</strong></button>
         </form>
-      <footer>
-        <p class="weare">"We are building the future of the financial system"</p>
-        <p class="weare2">Seebaly 2017</p>
-      </footer>
-      <script src="seebaly.js">
-        mixpanel.track("Number of visits");
-      </script>
+      	<footer>
+        	<p class="">"We are building the future of the financial system"</p>
+        	<p class="">Seebaly 2017</p>
+	  	</footer>
+	  
+	  
+	  	<script src="js/seebaly.js"></script>
+		<script src="https://js.stripe.com/v3/"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
