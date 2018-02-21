@@ -7,25 +7,29 @@ body{
   background-color: black;
 }
 .space {
-  margin-top: 200px;
-  
+  margin-top: 150px;
   
 }
 .space1{
-  margin-bottom: 190px;
+  margin-bottom: 100px;
 }
 .sect1 {
-  background-color: #FFA781;
+  /*background: rgb(154, 162, 207) */
+  background: linear-gradient(114.15291878277219deg, rgba(249, 231, 148,1) 4.927083333333334%,#FFE6E3 97.84374999999999%);
+}
+.sect2{
+  background: #FEEEFB;
+  margin: 0;
 }
 
-
-.btn1 {
-  /* background: linear-gradient(to left, #00CCE4, #4643F6 ); */
-  background: linear-gradient(to left,#FFF76D, #FFF76D );
-  color: rgb(247, 60, 3);
+.btn0 {
+  /*background: linear-gradient(to left, #00CCE4, #4643F6 );*/
+  background: linear-gradient(to left, rgb(108, 110, 241), #6C96F1 );
+  
+  color: rgb(255, 255, 255);
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
               0 3px 6px 0 rgba(0,0,0,0.08);
-  border-radius: 7px;
+  border-radius: 30px;
   border: 0;
 
   font-size: 20px;
@@ -35,11 +39,73 @@ body{
   cursor: pointer;
 }
 
-.btn1:focus {
-  
-  background: rgb(6, 20, 20);
+.text-gradient {
+  color: rgb(20, 20, 20);
 }
 
-.btn1:active {
-  background: #4b4dd3;
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}   
+/* END ANIMATIONS */
+
+/* FORMS */
+
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }

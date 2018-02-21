@@ -3,18 +3,35 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Seebaly el datáfono dígital para realizar pagos en el mundo real</title>
+		<title>Seebaly el datáfono dígital para realizar pagos en el mundo real</title>
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" data-rel-css="" />
 		<link rel="stylesheet" href="css/seebaly.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!--content-->
+		<meta name="Description" content="El datáfono dígital para realizar pagos en el mundo real." />
+		<meta property="og:url" content="https://seebaly.com" />
+		<meta property="og:title" content="Seebaly" />
+		<meta property="og:description" content="El datáfono dígital para realizar pagos en el mundo real." />
+		<meta property="og:image" content="img/sp.png" />
+		<meta property="og:image:width" content="1000" />
+		<meta property="og:image:height" content="250" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Seebaly" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:locale" content="es" />
+		<meta property="og:locale" content="es-CO" />		
+		<!--content-->
 	</head>
-  	<body>
+  	<body ondragstart="return false;" ondrop="return false;">
+
     	<header class="header sticky-top">
       		<nav class="navbar navbar-expand-md navbar-dark ">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">
-						<img src="img/s2x.png" width="50" height="">
+						<img src="img/s2x.png" width="40" height="">
 						<span class="h4 text-light align-middle">Seebaly</span> 
 					</a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
@@ -30,69 +47,113 @@
       		</nav>
 		</header>
       	
-        <div class="container display-5 space">
-			<img class="rounded mx-auto d-block" src="img/sp.png" alt="Seebaly Pay" width="450">
+        <div class="container display-5 space animated animatedFadeInUp fadeInUp">
+			<figure>
+				<img class="img-fluid mx-auto d-block" src="img/sp.png" alt="Seebaly Pay" width="430">							
+			</figure>
 			<p class="h1 text-center mt-3 font-weight-bold">El datáfono dígital para realizar pagos en el mundo real.</p>
 			<div class="d-flex justify-content-center space1">
-					<button class="btn btn-lg btn1 px-5 mt-5"><strong>Conoce más</strong></button>
+				<button class="btn-lg btn0 px-5 mt-5"><strong>Conoce más</strong></button>
 			</div>
-			<img class="mt-5 rounded mx-auto d-block" src="img/2xpay.png" width="500">
+			<div class="container">
+				<img class="img-fluid mx-auto d-block " src="img/iphone.png" width="395">			
+			</div>
 		</div>
 			
-      	<section class="sect1">
-      		<form class="container d-block">
-      			<p class=""><strong>Demo</strong></p>
-        		<p class="">use this card to test: ‎4242 4242 4242 4242</p>
-      			<img class="" src="img/bag.png" atl="img_1" width="200" height="200">
-      			<div class="">
-        			<label>
-          				<span>Name</span>
-          				<input class="" name="cardholder-name" placeholder="Name and last name" />
-        			</label>
-        			<label>
-          				<span>Phone</span>
-          				<input class="" placeholder="(+57) 3113943129" type="tel" />
-        			</label>
-      			</div>
-      			<div class="">
-        			<label>
-          				<span>Card</span>
-          				<div id="card-element" class=""></div>
-        			</label>
-      			</div>
-      			<div>
-        			<button type="submit"><strong>Pay</strong></button>
-      			</div>
-      			<div class="">
-        			<div class="" role="alert"></div>
-        			<div class="">
-          				Success! Your Seebaly Id is <span class=""></span>
-        			</div>
-      			</div>
-    		</form>
-    
+		<div class="sect1">
+			<h1 class="display-3 text-center font-weight-bold pt-5"> <span class="text-gradient">¿Como Funciona?</span></h1>
+			<div class="container">
+				<p class="h2 text-center">
+					Imagina que tienes un restaurante de tacos 
+					<img src="https://png.icons8.com/color/50/000000/taco.png"> 
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					y un cliente desea pagarte con tarjea de crédito pero no tienes datafono 
+					<img src="https://png.icons8.com/color/50/000000/card-in-use.png">
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Y deseeas procesar pagos con tarjetas pero aún asi sabes que para hacerlo debes firmar papeleo, pagar suscripciones y alquilar hardware 
+					<img src="https://png.icons8.com/ultraviolet/40/000000/confused.png">
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Con Seebaly puedes hacerlo de la siguiente manera.
+					<img src="https://png.icons8.com/ios/40/000000/hand-down.png">
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Ingresas a <a class="alert-link" href="#">Seebaly.com</a>
+					<br>
+					Haces click en <span class="font-weight-bold">Registrarte</span>	 
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Vinculas tu cuenta Bancaria
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					¡y todos Felices!, ahora tienes un terminal de ventas donde puedes procesar tarjetas de crédito, débito
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Cerrar ventas y cobrar en cualquier lugar sin aparatos adicionales 
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Y como somos transparentes, solo te cobraremos... el 3.33% + 900 pesos por cada transacción
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					Y como somos transparentes, solo te cobraremos...
+				</p>
+			</div>
+			<div class="container">
+				<p class="text-center">
+					<span class="h3" style="color: #5F91EB;">el 3.33% + 900 pesos</span>
+				</p> 
+			</div>
+			<div class="container">
+				<p class="text-center">
+					por cada transacción
+				</p>
+			</div>
+		</div>
+
+		<section>
+			<form action="/charge" method="post" id="payment-form">
+				<div class="form-row">
+					<label for="card-element">
+					  Credit or debit card
+					</label>
+					<div id="card-element">
+					  <!-- a Stripe Element will be inserted here. -->
+					</div>
+				
+					<!-- Used to display form errors -->
+					<div id="card-errors" role="alert"></div>
+				</div>
+				<button>Submit Payment</button>
+			</form>
 		</section>
-		
-        <h3>contact us</h3>
-        <form class="">
-			<label for="name">
-				<span class="">Name</span>
-				<input type="text" required placeholder="Nombre Apellido" id="name">
-			</label>
-			<label for="mail">
-				<span class="">Mail</span>
-				<input type="email" required placeholder="mail@example.com" id="mail">
-			</label>
-			<button type="submit" class=""><strong>send</strong></button>
-        </form>
+
       	<footer>
         	<p class="">"We are building the future of the financial system"</p>
         	<p class="">Seebaly 2017</p>
 	  	</footer>
-	  
-	  
-	  	<script src="js/seebaly.js"></script>
+		
 		<script src="https://js.stripe.com/v3/"></script>
+		<script src="js/seebaly.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
