@@ -7,20 +7,20 @@ body{
   background-color: black;
 }
 .space {
-  margin-top: 150px;
+  margin-top: 70px;
   
 }
 .space1{
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .sect1 {
-  background: linear-gradient(to left, rgb(172, 173, 218), rgb(120, 152, 219) );
+  background: linear-gradient(to left, rgb(198, 195, 218), rgba(45, 63, 219, 0.582));
   
 }
 
 .btn0 {
   /*background: linear-gradient(to left, #00CCE4, #4643F6 );*/
-  background: linear-gradient(to left, rgb(142, 143, 202), #6C96F1 );
+  background: linear-gradient(to left, rgb(68, 87, 255), rgb(54, 12, 241) );
   
   color: rgb(255, 255, 255);
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
@@ -38,13 +38,14 @@ body{
   color: #f5f5f5 ;
 }
 .bubble {
-  background: linear-gradient(to right, rgb(102, 102, 207), orange);
+  margin: 10px 0 10px 0;
+  background: #D6F8C9;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0 5px 10px 1px rgba(28, 28, 39, 0.1);
 }
 .bubble1 {
-  background: linear-gradient(to left, rgb(108, 110, 241), rgb(72, 204, 143) );
+  background: white;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0 5px 10px 1px rgba(28, 28, 39, 0.1);

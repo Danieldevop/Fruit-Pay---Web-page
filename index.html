@@ -1,102 +1,239 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Seebaly realiza pagos y transacciones con cero comisiones</title>
 
-		<link rel="stylesheet" href="css/seebaly.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<!--content-->
-		<meta name="Description" content="Seebaly realiza pagos y transacciones con cero comisiones." />
-		<meta property="og:url" content="https://seebaly.com" />
-		<meta property="og:title" content="Seebaly" />
-		<meta property="og:description" content="Seebaly realiza pagos y transacciones con cero comisiones." />
-		<meta property="og:image" content="img/sp.png" />
-		<meta property="og:image:width" content="1000" />
-		<meta property="og:image:height" content="250" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Seebaly" />
-		<meta property="og:locale" content="es_ES" />
-		<meta property="og:locale" content="es" />
-		<meta property="og:locale" content="es-CO" />		
-		<!--content-->
-	</head>
-  	<body ondragstart="return false;" ondrop="return false;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Seebaly realiza pagos y transacciones con cero comisiones</title>
+	<link rel="shortcut icon" href="img/taco.svg">
+	<link rel="stylesheet" href="css/seebaly.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<!--content-->
+	<meta name="Description" content="Seebaly realiza pagos y transacciones con cero comisiones." />
+	<meta property="og:url" content="https://seebaly.com" />
+	<meta property="og:title" content="Seebaly" />
+	<meta property="og:description" content="Seebaly realiza pagos y transacciones con cero comisiones." />
+	<meta property="og:image" content="img/sp.png" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="250" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Seebaly" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:locale" content="es" />
+	<meta property="og:locale" content="es-CO" />
+	<!--content-->
 
-    	<header class="header sticky-top">
-      		<nav class="navbar navbar-expand-md navbar-dark ">
-				<div class="container">
-					<a class="navbar-brand" href="index.html">
-						<img src="img/s2x.png" width="40" height="">
-						<span class="h4 text-light align-middle">Seebaly</span> 
-					</a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
-						<i class="fa fa-bars"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbar1">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item"><a class="nav-link text-light font-weight-bold" href="">$</a></li>
-							<li class="nav-item"><a class="nav-link text-light font-weight-bold ml-md-3" href="">Demo</a></li>
-						</ul>
-					</div>
-				</div>
-      		</nav>
-		</header>
-      	
-        <div class="container display-5 space animated animatedFadeInUp fadeInUp">
-			<figure>
-				<img class="img-fluid mx-auto d-block" src="img/sp.png" alt="Seebaly Pay" width="430">							
-			</figure>
-			<p class="font1 text-center mt-3 font-weight-bold">Realiza pagos y transferencias con cero comisiones.</p>
-			<div class="d-flex justify-content-center space1">
-				<button class="btn-lg btn0 px-5 mt-5" onclick="location.href='#how-it-works'"><strong>Conoce más</strong></button>
-			</div>
+	<style>
+		/**
+			* The CSS shown here will not be introduced in the Quickstart guide, but shows
+			* how you can use CSS to style your Element's container.
+			*/
+
+		.StripeElement {
+			background-color: white;
+			height: 40px;
+			width: 300px;
+			padding: 10px 12px;
+			border-radius: 4px;
+			border: 1px solid transparent;
+			box-shadow: 0 1px 3px 0 #d1d5da;
+			-webkit-transition: box-shadow 150ms ease;
+			transition: box-shadow 150ms ease;
+		}
+
+		.StripeElement--focus {
+			box-shadow: 0 1px 3px 0 #cfd7df;
+		}
+
+		.StripeElement--invalid {
+			border-color: #fa755a;
+		}
+
+		.StripeElement--webkit-autofill {
+			background-color: #fefde5 !important;
+		}
+	</style>
+</head>
+
+<body ondragstart="return false;" ondrop="return false;">
+
+	<header class="header sticky-top">
+		<nav class="navbar navbar-expand-md navbar-dark ">
 			<div class="container">
-				<img class="img-fluid mx-auto d-block " src="img/iphone.png" width="395">			
+				<a class="navbar-brand" href="index.html">
+					<img src="img/s2x.png" width="40" height="">
+					<span class="h4 text-light align-middle">Seebaly</span>
+				</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbar1">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link text-light font-weight-bold" href="https://www.youtube.com/watch?v=mrORbZ2dS08">$</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light font-weight-bold ml-md-3" href="">Demo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container display-5 space animated animatedFadeInUp fadeInUp">
+		<figure>
+			<img class="img-fluid mx-auto d-block" src="img/sp.png" alt="Seebaly Pay" width="400">
+		</figure>
+		<p class="font1 text-center mt-3 font-weight-bold">Realiza pagos y transferencias con cero comisiones.</p>
+		<div class="container">
+			<img class="img-fluid mx-auto d-block " src="img/spend.gif" width="500">
+		</div>
+		<div class="d-flex justify-content-center space1">
+			<button class="btn-lg btn0 px-5 mt-1" onclick="location.href='#how-it-works'">
+				<strong>Conoce más</strong>
+			</button>
+		</div>
+
+	</div>
+
+	<section class="sect1 p-2" id="how-it-works">
+		<h1 class="display-4 text-center font-weight-bold pt-5 mb-5">
+			<span class="text-gradient">¿Como Funciona?</span>
+		</h1>
+		<div class="container pb-5">
+			<div class="row d-block">
+				<div class="col-lg-9 col-md-9 align-self-end ms-font bubble">
+					Imagina que tienes un restaurante de tacos
+					<img src="https://png.icons8.com/color/40/000000/taco.png">
+				</div>
+				<div class="col-lg-12 col-md-12	align-self-center ms-font bubble1">
+					Y un cliente desea pagarte con tarjeta de crédito.
+					<br> pero sabes que lo normal es que cada pago incluya costosas comisones por transacción
+					<img src="https://png.icons8.com/dusk/40/000000/money.png">
+				</div>
+				<div class="col-lg-11 col-md-11 align-self-start ms-font bubble">
+					Pensando en tí hemos creado una plataforma de pagos que te permite...
+				</div>
+				<div class="col-lg-10 col-md-10 align-self-end ms-font bubble1">
+					Pagar gastar y realizar transferencias entre amigos, familiares y locales comerciales
+					<img src="https://png.icons8.com/color/40/000000/connection-sync.png">
+				</div>
+				<div class="col-lg-3 col-md-4 align-self-center ms-font bubble">
+					Con 0% comisiones
+					<img src="https://png.icons8.com/color/40/000000/clenched-fist.png">
+				</div>
+				<div class="col-lg-9 col-md-10 align-self-start ms-font bubble1">
+					¡Y todos Felices!, ahora tienes una manera de realizar pagos y transferencias de manera gratuita
+					<img src="img/Nyan-Cat-Original.ico" alt="" width="50">
+				</div>
 			</div>
 		</div>
-			
-		<section class="sect1 p-2" id="how-it-works">
-			<h1 class="display-4 text-center font-weight-bold pt-5 mb-5"> <span class="text-gradient">¿Como Funciona?</span></h1>			
-			<div class="container pb-5">
-				<div class="row d-block">
-					<div class="col-lg-9 col-md-9 align-self-end h5 text-light bubble">
-						Imagina que tienes un restaurante de tacos 
-						<img src="https://png.icons8.com/color/50/000000/taco.png"> 													
-					</div>
-					<div class="col-lg-12 col-md-12	align-self-center h5 text-light bubble1">
-						y un cliente desea pagarte con tarjea de crédito.
-						<br>
-						pero sabes que lo normal es que cada pago incluya costosas comisones por transacción														
-					</div>
-					<div class="col-lg-11 col-md-11 align-self-start h5 text-light bubble">
-						Pensando en tí hemos creado una plataforma de pagos que te permite...																																					
-					</div>
-					<div class="col-lg-10 col-md-10 align-self-end h5 text-light bubble1">
-						Pagar gastar y realizar transferencias entre amigos, familiares y locales comerciales																																					
-					</div>
-					<div class="col-lg-3 col-md-4 align-self-center h5 text-light bubble">
-						con 0% comisiones																																						
-					</div>			
-					<div class="col-lg-9 col-md-10 align-self-start h5 bubble1 text-light">
-						¡y todos Felices!, ahora tienes una manera de realizar pagos y transferencias de manera gratuita
-					</div>
-				</div>
-			</div>
-		</section>
+	</section>
 
-      	<footer class="foo text-center pt-5 p-1">
-        	<p class="font-weight-bold">Estámos construyendo el futuro del sistema finaciero</p>
-        	<p class="font-weight-bold">© 2018 Seebaly</p>
-	  	</footer>
-		
-		<script src="https://js.stripe.com/v3/"></script>
-		<script src="js/seebaly.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	<section>
+		<div class="container">
+			<script src="https://js.stripe.com/v3/"></script>
+			<form action="/charge" method="post" id="payment-form">
+				<div class="form-row">
+					<label for="card-element">
+						Tarjeta
+					</label>
+					<div id="card-element">
+						<!-- A Stripe Element will be inserted here. -->
+					</div>
+
+					<!-- Used to display form errors. -->
+					<div id="card-errors" role="alert"></div>
+				</div>
+
+				<button>Submit Payment</button>
+			</form>
+		</div>
+
+	</section>
+
+	<section class="m-5">
+		<div class="d-flex justify-content-center">
+			<a class="typeform-share btn0" href="https://daniel1971.typeform.com/to/obfsCX" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#4D7FE9;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:19px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+			 target="_blank">Contáctanos </a>
+			<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+		</div>
+	</section>
+
+	<footer class="foo text-center pt-5 p-1">
+		<p class="font-weight-bold">Estámos construyendo el futuro del sistema finaciero</p>
+		<p class="font-weight-bold">© 2018 Seebaly</p>
+	</footer>
+
+	<script>
+		// Create a Stripe client.
+		var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+
+		// Create an instance of Elements.
+		var elements = stripe.elements();
+
+		// Custom styling can be passed to options when creating an Element.
+		// (Note that this demo uses a wider set of styles than the guide below.)
+		var style = {
+			base: {
+				color: '#32325d',
+				lineHeight: '18px',
+				fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+				fontSmoothing: 'antialiased',
+				fontSize: '16px',
+				'::placeholder': {
+					color: '#aab7c4'
+				}
+			},
+			invalid: {
+				color: '#fa755a',
+				iconColor: '#fa755a'
+			}
+		};
+
+		// Create an instance of the card Element.
+		var card = elements.create('card', { style: style });
+
+		// Add an instance of the card Element into the `card-element` <div>.
+		card.mount('#card-element');
+
+		// Handle real-time validation errors from the card Element.
+		card.addEventListener('change', function (event) {
+			var displayError = document.getElementById('card-errors');
+			if (event.error) {
+				displayError.textContent = event.error.message;
+			} else {
+				displayError.textContent = '';
+			}
+		});
+
+		// Handle form submission.
+		var form = document.getElementById('payment-form');
+		form.addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			stripe.createToken(card).then(function (result) {
+				if (result.error) {
+					// Inform the user if there was an error.
+					var errorElement = document.getElementById('card-errors');
+					errorElement.textContent = result.error.message;
+				} else {
+					// Send the token to your server.
+					stripeTokenHandler(result.token);
+				}
+			});
+		});
+	</script>
+	<script src="js/seebaly.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+</body>
+
 </html>
