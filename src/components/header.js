@@ -2,12 +2,11 @@ import React from 'react'
 
 function Header(props) {
   return (
-    <header className="header sticky-top">
+    <header className="header">
       <nav className="navbar navbar-expand-md navbar-dark ">
         <div className="container">
           <a className="navbar-brand" href={props.hrefLogo}>
-            <img src={props.img} width={props.widthLogo} height="" alt="11:11" />
-            <span className="h4 text-light align-middle ml-1">{props.title}</span>
+            <img src={props.img} width={props.widthLogo} height="" alt="seebaly" />
           </a>
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
             <span className="navbar-toggler-icon"></span>
