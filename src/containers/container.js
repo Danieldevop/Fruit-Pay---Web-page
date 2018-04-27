@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from '../components/header'
-import Section1 from '../components/section1'
 import Section2 from '../components/section2'
 import Footer from '../components/footer.jsx'
 import img from '../img/seebaly.png'
@@ -20,11 +19,9 @@ class Container extends Component {
           hrefLogo={'index.html'}
           href1={''}
           href2={'#'}
-          link1={'Support'}
+          link1={'xoxo'}
           link2={'FAQ'}
-        />
-        <Section1 
-          text1={'Move your money in seconds.'}
+          text1={'Send your money in seconds.'}
           imgPrincipal={img2}
           imgPrincipalWidth={300}
           eventClick={this.handleClick}
