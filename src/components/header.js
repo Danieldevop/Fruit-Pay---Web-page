@@ -15,10 +15,10 @@ function Header(props) {
             <div className="collapse navbar-collapse" id="navbar1">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link text-light font-weight-bold" href={props.href1}>{props.link1}</a>
+                  <a className="nav-link text-light font-weight-bold" href='' >{props.link1}</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-light font-weight-bold ml-md-3" href={props.href2}>{props.link2}</a>
+                  <a className="nav-link text-light font-weight-bold ml-md-3" href='' >{props.link2}</a>
                 </li>
               </ul>
             </div>
@@ -28,10 +28,10 @@ function Header(props) {
       <section className="container display-5 space animated animatedFadeInUp fadeInUp ">
         <div className="row">
           <div className="col-sm">
-            <p className="font1 text-center mt-3 font-weight-bold">{props.text1}</p>
+            <p className="font1 text-center mt-3">{props.text1}</p>
           </div>
           <div className="col-sm">
-            <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} />
+            <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} height={100} />
             <div className="d-flex justify-content-center space1">
               <button className="btn-lg btn0 px-5 mt-3" onClick={props.eventClick} >
                 <strong>{props.btnTxt}</strong>
