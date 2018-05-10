@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../components/header'
-import Section2 from '../components/section2'
-import Footer from '../components/footer.jsx'
-import img from '../img/seebaly.png'
+import Section2 from '../components/section2.jsx'
+import img from '../img/moneyx.png'
 import img2 from '../img/cloud.gif'
 
 
@@ -15,23 +14,18 @@ class Container extends Component {
     return (
       <div>
         <Header
-          widthLogo={100}
+          widthLogo={125}
           img={img}
           hrefLogo={'index.html'}
           link1={'Pricing'}
           link2={'FAQ'}
-          text1={'Transfers and Pay, all in One app.'}
+          text1={'Secure payment experiences.'}
           imgPrincipal={img2}
           imgPrincipalWidth={200}
           eventClick={this.handleClick}
           btnTxt={'Send Now'}
         />
-        <Section2
-          textBtn={'Support'}
-          title={'We are making your money'}
-          subTitle={'© 2018 Seebaly'}
-        />
-        <Footer/>
+        <Section2 />
       </div>
     )
   }
