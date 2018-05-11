@@ -2,7 +2,7 @@ body{
   font-family: "Circular";
   margin: 0;
   font-size: 1rem;
-  background-color: #f0f0f0;
+  background-color: #F8F8F8;
 }
 
 @font-face {
@@ -60,13 +60,6 @@ body{
 }
 .text-gradient {
   color: #f5f5f5 ;
-}
-.bubble {
-  margin: 10px 0 10px 0;
-  background: #D6F8C9;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 5px 10px 1px rgba(28, 28, 39, 0.1);
 }
 .bubble1 {
   background: white;

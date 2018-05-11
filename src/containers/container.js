@@ -19,7 +19,7 @@ class Container extends Component {
           hrefLogo={'index.html'}
           link1={'Pricing'}
           link2={'FAQ'}
-          text1={'Secure payment experiences.'}
+          text1={'Global payments experiences.'}
           imgPrincipal={img2}
           imgPrincipalWidth={200}
           eventClick={this.handleClick}
