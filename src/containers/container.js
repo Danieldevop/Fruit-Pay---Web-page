@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/header'
 import Section2 from '../components/section2.jsx'
 import img from '../img/moneyx.png'
-import img2 from '../img/cloud.gif'
+import img2 from '../img/amex.png'
 
 
 class Container extends Component {
@@ -21,7 +21,7 @@ class Container extends Component {
           link2={'FAQ'}
           text1={'Global payments experiences.'}
           imgPrincipal={img2}
-          imgPrincipalWidth={200}
+          imgPrincipalWidth={500}
           eventClick={this.handleClick}
           btnTxt={'Send Now'}
         />

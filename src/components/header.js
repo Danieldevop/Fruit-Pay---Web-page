@@ -2,9 +2,9 @@ import React from 'react'
 
 function Header(props) {
   return (
-    <div className="container coverwave">
+    <div className="coverwave">
       <header className="header">
-        <nav className="navbar navbar-expand-md navbar-dark ">
+        <nav className="navbar navbar-expand-md navbar-dark">
           <div className="container">
             <a className="navbar-brand" href={props.hrefLogo}>
               <img src={props.img} width={props.widthLogo} height="" alt="moneyX" />
