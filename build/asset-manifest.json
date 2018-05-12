@@ -1,8 +1,17 @@
 {
+<<<<<<< HEAD
   "main.css": "static/css/main.0d92ca39.css",
   "main.css.map": "static/css/main.0d92ca39.css.map",
   "main.js": "static/js/main.b0be6d48.js",
   "main.js.map": "static/js/main.b0be6d48.js.map",
   "static/media/cloud.png": "static/media/cloud.3b584fe5.png",
   "static/media/see.svg": "static/media/see.33883983.svg"
+=======
+  "main.css": "static/css/main.aacd6316.css",
+  "main.css.map": "static/css/main.aacd6316.css.map",
+  "main.js": "static/js/main.840c4f21.js",
+  "main.js.map": "static/js/main.840c4f21.js.map",
+  "static\\media\\cloud.gif": "static/media/cloud.5961127e.gif",
+  "static\\media\\see.svg": "static/media/see.42df6a55.svg"
+>>>>>>> c46cb8777bd8ec60b1ac125c1a3c10a8856b0624
 }
