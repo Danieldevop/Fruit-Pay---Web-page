@@ -28,12 +28,15 @@ function Header(props) {
       <section className="container display-5 space animated animatedFadeInUp fadeInUp ">
         <div className="row">
           <div className="col-sm">
-            <p className="font1 text-center">{props.text1}</p>
+            <p className="font1 text-center"><span className="global">Global</span> payments experiences.</p>
           </div>
           <div className="col-sm">
             <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} height={100} />
             <div className="d-flex justify-content-center space1">
               <button className="btn-lg btn0 px-5 mt-3" onClick={props.eventClick} >
+                <svg width="15" height="12">
+                  <polygon fill="white" points="5.400004932295694 6.000000986459138 0.8000049322956935 9.700000986459138 2.1000049322956933 11.300000986459139 8.600004932295693 6.000000986459138 2.1000049322956933 0.7000009864591387 0.8000049322956935 2.3000009864591386"></polygon>
+                </svg>
                 <strong>{props.btnTxt}</strong>
               </button>
             </div>

@@ -14,11 +14,11 @@ function Section2(props) {
             <img className="img-fluid mx-auto d-block" src={mpay} alt="" width="100" />
             <p className="text-center ">Real Time* Global payments</p>
           </div>
-          <div className="col-md bubble ml-4">
+          <div className="col-md bubble">
             <img className="img-fluid mx-auto d-block" src={mpay2} alt="" width="100" />
             <p className="text-center">Friends and family transfers</p>
           </div>
-          <div className="col-md bubble ml-4">
+          <div className="col-md bubble">
             <img className="img-fluid mx-auto d-block" src={merchant} alt="" width="100" />
             <p className="text-center">Global payments for Businesses, e-commerce and startups</p>
           </div>
