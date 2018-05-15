@@ -29,7 +29,7 @@ function Header(props) {
         <section className="container display-5 space animated animatedFadeInUp fadeInUp ">
           <div className="row">
             <div className="col-sm">
-              <p className="font1 text-center"><span className="global">Global</span> payments experiences.</p>
+              <p className="font1 text-left"><span className="global">Global</span> payments experiences.</p>
             </div>
             <div className="col-sm">
               <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} height={100} />

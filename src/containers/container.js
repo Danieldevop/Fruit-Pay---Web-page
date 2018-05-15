@@ -22,7 +22,7 @@ class Container extends Component {
           imgPrincipal={img2}
           imgPrincipalWidth={500}
           eventClick={this.handleClick}
-          btnTxt={'Send Now'}
+          btnTxt={'SEND NOW'}
         />
         <Section2 />
       </div>

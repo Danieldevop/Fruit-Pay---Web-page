@@ -7,7 +7,7 @@ import merchant from '../img/mcard.svg'
 function Section2(props) {
   return (
     <div>
-      <section className="container mt-2">
+      <section className="container mt-2 lines">
         <h1 className="text-center p1" >What can you do with moneyx?</h1>
         <div className="row">
           <div className="col-md bubble">
