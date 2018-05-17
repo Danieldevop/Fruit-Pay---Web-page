@@ -1,15 +1,114 @@
 .p1 {
-    color: #222326;
+    font-size: 40px;
+    color: #1d1d5c;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     font-weight: bold;
+}
+.trans {
+    transform: skewY(8deg);
+}
+
+.pretext p {
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #525f7f;
+}
+
+h1 {
+    color: #68CDFC;
 }
 
 .bubble {
     margin: 10px 0 10px 0;
-    background: white;
+    background: #FFFFFF;
     border-radius: 20px;
     padding: 10px;
     padding-top: 30px;
-    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.199);
+    z-index: -1;
 }
+.space {
+    margin-bottom: 100px;
+}
+
+.wave {
+    padding: 50px 0 100px 0;
+    width: 100%;
+    transform: skewY(-8deg);
+    z-index: -2;
+    background:linear-gradient(113.93864553878723deg, rgba(196, 234, 255, 0.644) 4.927083333333334%,rgba(156, 219, 255, 0.849) 97.84374999999999%);
+}
+.wave1 {
+    margin-top: 120px;
+    padding: 50px 0 100px 0;
+    width: 600px;
+    transform: skewY(-8deg);
+    background:linear-gradient(113.93864553878723deg, rgba(115, 230, 163, 0.842) 4.927083333333334%,#AAF1B9 97.84374999999999%);
+} 
+
+@media (max-width: 1920px) {
+    .b2{
+        margin-left: 60px;
+    }
+    .b3{
+        margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 1366px) {
+    .b2{
+        margin-left: 40px;
+    }
+    .b3{
+        margin-left: 40px;
+    }
+    
+  }
+  @media (max-width: 1280px) {
+    .b2{
+        margin-left: 40px;
+    }
+    .b3{
+        margin-left: 40px;
+    }
+  
+  }
+  
+  @media (max-width: 1024px) {
+    .b2{
+        margin-left: 20px;
+    }
+    .b3{
+        margin-left: 20px;
+    }
+   
+  }
+  @media (max-width: 992px) {
+    .b2{
+        margin-left: 30px;
+    }
+    .b3{
+        margin-left: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .b2{
+        margin-left: 0px;
+    }
+    .b3{
+        margin-left: 0px;
+    }
+    
+  }
+  
+  @media (max-width: 575px) {
+    .b2{
+        margin-left: 0px;
+    }
+    .b3{
+        margin-left: 0px;
+    }
+  }

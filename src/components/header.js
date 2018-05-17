@@ -3,7 +3,7 @@ import React from 'react'
 function Header(props) {
   return (
     <div className="bg">
-      <div className="coverwave">
+      <div className="">
         <header className="header">
           <nav className="navbar navbar-expand-md navbar-dark">
             <div className="container">

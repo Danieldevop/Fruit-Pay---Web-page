@@ -21,22 +21,18 @@ body{
 }
 .bg{
   width: 100%;
-  background: linear-gradient(180deg, #e6ebf1 350px, rgba(230, 235, 241, 0));
-}
-
-.coverwave {
-  padding-bottom: 90px;
+  background: linear-gradient(180deg, rgb(242, 248, 251) 350px, rgba(230, 235, 241, 0));
 }
 
 .font1 {
-  color: #222326;
+  color: #32325d;
   margin-top: 140px;
 }
 .global {
-  color: #3ecf8e;
+  color: #49E5A6;
 }
 .space {
-  margin-top: 40px;
+  margin-top: 30px;
   
 }
 .space1{
@@ -44,7 +40,7 @@ body{
 }
 
 .btn0 {
-  background: #3ECF8E;
+  background: #68D4F8;
   color: white;
   text-shadow: 0 1px 3px rgba(185, 185, 185, 0.4);
   box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
