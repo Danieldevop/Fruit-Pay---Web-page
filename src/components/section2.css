@@ -38,7 +38,7 @@ h1 {
     width: 100%;
     transform: skewY(-8deg);
     z-index: -2;
-    background:linear-gradient(113.93864553878723deg, rgba(196, 234, 255, 0.644) 4.927083333333334%,rgba(156, 219, 255, 0.849) 97.84374999999999%);
+    background: rgba(158, 207, 224, 0.719);
 }
 .wave1 {
     margin-top: 120px;

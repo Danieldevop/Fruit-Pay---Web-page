@@ -26,10 +26,12 @@ function Header(props) {
             </div>
           </nav>
         </header>
+        <div className="wave2"></div>
+        <div className="wave3"></div>         
         <section className="container display-5 space animated animatedFadeInUp fadeInUp ">
           <div className="row">
             <div className="col-sm">
-              <p className="font1 text-left"><span className="global">Global</span> payments experiences.</p>
+              <p className="font1 text-left">Realtime <span className="global">Payments</span> experiencies.</p>
             </div>
             <div className="col-sm">
               <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} height={100} />

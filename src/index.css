@@ -10,7 +10,22 @@ body{
   font-weight: 900;
   src: url("https://sp-bootstrap.global.ssl.fastly.net/8.2.4/fonts/circular-black.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.2.4/fonts/circular-black.woff") format("woff");
 }
-
+.wave2 {
+  padding: 50px 0 100px 0;
+  width: 500px;
+  position: absolute;
+  margin-top:10%;
+  transform: skewY(-8deg);
+  background: linear-gradient(113.93864553878723deg, rgba(194, 194, 194, 0.44) 4.927083333333334%,rgba(221, 238, 224, 0.5) 97.84374999999999%);
+}
+.wave3 {
+  margin-top: 120px;
+  padding: 50px 0 100px 0;
+  width: 600px;
+  position: absolute;
+  transform: skewY(-8deg);
+  background: linear-gradient(113.93864553878723deg, rgba(115, 230, 163, 0.14) 4.927083333333334%,#AAF1B980 97.84374999999999%);
+}
 .header{
   font-weight: 100;
   font-size: 18px;
@@ -21,7 +36,7 @@ body{
 }
 .bg{
   width: 100%;
-  background: linear-gradient(180deg, rgb(242, 248, 251) 350px, rgba(230, 235, 241, 0));
+  background: linear-gradient(180deg, rgba(214, 227, 218, 0.384) 350px, rgba(230, 235, 241, 0));
 }
 
 .font1 {
@@ -72,7 +87,7 @@ body{
 
 @media (max-width: 1920px) {
   .font1 {
-    font-size: 60px;   
+    font-size: 59px;   
   }
 }
 
