@@ -16,7 +16,7 @@ body{
   position: absolute;
   margin-top:10%;
   transform: skewY(-8deg);
-  background: linear-gradient(113.93864553878723deg, rgba(194, 194, 194, 0.44) 4.927083333333334%,rgba(221, 238, 224, 0.5) 97.84374999999999%);
+  background-image: linear-gradient(90deg,hsla(0,0%,100%,0),#fff 97%);
 }
 .wave3 {
   margin-top: 120px;
@@ -24,7 +24,7 @@ body{
   width: 600px;
   position: absolute;
   transform: skewY(-8deg);
-  background: linear-gradient(113.93864553878723deg, rgba(115, 230, 163, 0.14) 4.927083333333334%,#AAF1B980 97.84374999999999%);
+  background-image: linear-gradient(90deg,hsla(0,0%,100%,0),#fff 97%);  
 }
 .header{
   font-weight: 100;
@@ -36,15 +36,16 @@ body{
 }
 .bg{
   width: 100%;
-  background: linear-gradient(180deg, rgba(214, 227, 218, 0.384) 350px, rgba(230, 235, 241, 0));
+  background: linear-gradient(180deg, #EAF0F6 350px, rgba(224, 227, 231, 0));
 }
 
 .font1 {
-  color: #32325d;
+  color: #303031;
   margin-top: 140px;
+  text-align: left;      
 }
 .global {
-  color: #49E5A6;
+  color: #68D4F8;
 }
 .space {
   margin-top: 30px;
@@ -94,35 +95,107 @@ body{
 @media (max-width: 1366px) {
   .font1 {
     font-size: 50px;
-    margin-top: 70px;    
+    margin-top: 200px;
+    text-align: left;          
+  }
+  .wave3 {
+    margin-top: 90px;
+  }
+  .mates {
+    position: absolute;
+    padding: 40px 0 70px 0;
+    width: 330px;
   }
   
 }
 @media (max-width: 1280px) {
   .font1 {
-    font-size: 40px;
-    margin-top: 70px;
+    font-size: 51px;
+    margin-top: 200px;
+    text-align: left;        
   }
   .btn0 {
     font-size: 16px;
+  }
+  .mates {
+    left: calc(40% + 352px);
+    width: 410px;
+  }
+  .wave3 {
+    width: 520px;
   }
 
 }
 
 @media (max-width: 1024px) {
   .font1 {
-    font-size: 40px;
-    margin-top: 70px;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-left: 70px;
+    text-align: left;        
   }
   .btn0 {
     font-size: 17px;
   }
+  .wave3 {
+    width: 430px;
+    padding: 50px 0 80px 0;
+  }
+  .wave2 {
+    padding: 50px 0 80px 0;
+    width: 400px;
+    margin-top: 11%;
+  }
+  .mates {
+    left: calc(30% + 307px);
+    width: 410px;
+  }
+  .wave {
+    padding: 5px 0 10px 0;
+  }
+  .wave1 {
+    padding: 50px 0 30px 0;
+  }
  
 }
-@media (max-width: 992px) {
+@media (max-width: 960px) {
   .font1 {
-    font-size: 40px;
-    margin-top: 30px;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 0px;
+    text-align: left;    
+  }
+  .btn0 {
+    font-size: 17px;
+  }
+  .p1 {
+    font-size: 35px;
+  }
+  .pretext p {
+    font-size: 15px;
+  }
+  .wave3 {
+    width: 400px;
+    padding: 50px 0 60px 0;
+  }
+  .wave2 {
+    padding: 50px 0 70px 0;
+    width: 390px;
+    margin-top: 11%;
+  }
+  .mates {
+    left: calc(30% + 262px);
+    width: 410px;
+    padding: 40px 0 20px 0;
+  }
+  .wave {
+    padding: 5px 0 45px 0;
+  }
+  .wave1 {
+    display: none;
+  }
+  .tip {
+    font-size: 35px;
   }
   
 }
@@ -130,7 +203,8 @@ body{
 @media (max-width: 768px) {
   .font1 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
+    text-align: center;
   }
   .space {
     margin-top: 80px;
@@ -138,16 +212,39 @@ body{
   .font1 {
     font-size: 40px;
   }
+  .wave2 {
+    padding: 50px 0 70px 0;
+    width: 370px;
+    margin-top: 12%;
+  }
+  .wave3 {
+    width: 400px;
+    padding: 50px 0 50px 0;
+    margin-top: 30px;
+  }
+  .mates {
+    display: none;
+  }
+  .tip {
+    font-size: 30px;
+  }
   
 }
 
 @media (max-width: 575px) {
   .font1 {
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 30px;
+    text-align: center;
   }
   .space {
     margin-top: 30px;
+  }
+  .wave3 {
+    width: 360px;
+  }
+  .wave2{
+    width: 350px;
   }
 }
 

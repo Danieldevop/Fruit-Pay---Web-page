@@ -5,7 +5,7 @@ function Header(props) {
     <div className="bg">
       <div className="">
         <header className="header">
-          <nav className="navbar navbar-expand-md navbar-dark">
+          <nav className="navbar navbar-expand-md navbar-light ">
             <div className="container">
               <a className="navbar-brand" href={props.hrefLogo}>
                 <img src={props.img} width={props.widthLogo} height="" alt="moneyX" />
@@ -31,7 +31,7 @@ function Header(props) {
         <section className="container display-5 space animated animatedFadeInUp fadeInUp ">
           <div className="row">
             <div className="col-sm">
-              <p className="font1 text-left">Realtime <span className="global">Payments</span> experiencies.</p>
+              <p className="font1"><span className="global">Payments</span> for humans.</p>
             </div>
             <div className="col-sm">
               <img className="img-fluid mx-auto d-block " alt="" src={props.imgPrincipal} width={props.imgPrincipalWidth} height={100} />
