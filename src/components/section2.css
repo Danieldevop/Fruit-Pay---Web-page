@@ -22,7 +22,7 @@
 }
 
 h1 {
-    color: #68CDFC;
+    color: #32325d;
 }
 
 .bubble {
@@ -42,12 +42,13 @@ h1 {
     width: 100%;
     transform: skewY(-8deg);
     z-index: -2;
-    background: linear-gradient(100grad, #CADBEA 8.73828125%,#F6F9FC 97.85286458333333%);
+    /*background: linear-gradient(100grad, #CADBEA 8.73828125%,#F6F9FC 97.85286458333333%);*/
+    background: #E4ECF4;
 }
 .wave1 {
     padding: 50px 0 100px 0;
     width: 600px;
-    background: linear-gradient(100grad,#CADBEA,#5ac6f173);
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0),rgba(255, 255, 255, 0.959) 97%); 
 } 
 
 .mates {

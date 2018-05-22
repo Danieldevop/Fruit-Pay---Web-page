@@ -30,7 +30,7 @@ body{
   font-weight: 100;
   font-size: 18px;
 }
-.navbar-dark .navbar-toggler {
+.navbar-light .navbar-toggler {
   color: transparent;
   border-color: transparent;
 }
