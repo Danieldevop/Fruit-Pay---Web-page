@@ -1,66 +1,73 @@
 import React from 'react'
 import './section2.css'
-import globe from '../img/globe.svg'
-import fyf from '../img/fyf.svg'
-import merchant from '../img/share.svg'
-import person from '../img/person.png'
-import corporate from '../img/corporate.png'
+import fruit from '../img/fruitlogo.png'
+import store from '../img/store.png'
+import send from '../img/send.png'
+import pay from '../img/pay.png'
+import web from '../img/web.png'
 
 function Section2(props) {
   return (
     <div className="">
-      <div className="wave">
-        <section className="container trans ">
-          <h2 className="text-center p1" >This is MoneyX</h2>
-          <div className="row pretext">
-            <div className="col-md b1">
-              <img className="img-fluid mx-auto d-block" src={globe} alt="" width="90" />
-              <p className="text-center mt-3">Real Time* payments</p>
-            </div>
-            <div className="col-md b2">
-              <img className="img-fluid mx-auto d-block" src={fyf} alt="" width="90" />
-              <p className="text-center mt-3">Transfer money to family and friends using your mobile phone.</p>
-            </div>
-            <div className="col-md b3">
-              <img className="img-fluid mx-auto d-block" src={merchant} alt="" width="90" />
-              <p className=" mt-3 text-left">Businesses persons and institutions can receive payments avoiding the ACH IBAN and other slow systems.</p>
-            </div>
-          </div>
-        </section>
-        <div className="wave1"></div>
-      </div>
       <section className="space">
-        <div className="container pretext separation">
-          <h1 className="text-center mb-5 mt-5 tip">Superpowers For persons</h1>
-          <div className="row">
-            <div className="col-md">
-              <img className="img-fluid mx-auto d-block " src={person} alt="person" width="600" />
-            </div>
-            <div className="col-md">
-              <p>Pay on apps</p>
-              <p>Pay on websites</p>
-              <p>Pay with Splitting bills</p>
-              <p>Send remittances</p>
-              <p>Send and receive money from clients<br/> friends and familiars</p>
-            </div>
-          </div>
-          <h1 className="text-center mb-5 mt-5 tip">Superpowers For Businesses and Goverments</h1>
-          <div className="row">
-            <div className="col-md">
-              <img className="img-fluid mx-auto d-block " src={corporate} alt="person" width="600" />
-            </div>
-            <div className="col-md">
-              <p>Receive payments worldwide directly to your account </p>
-              <p>Funds disbursement options for a variety of different situations </p>
-              <p>Manage Refunds</p>
-              <p>Manage Rebates</p>
-              <p>Manage Loan distributions</p>
-              <p>Government disbursements</p>
+        <div className="container pretext">
+          <img className="d-block img-fluid mx-auto" src={fruit} alt="" width="100" />
+
+          <div className="spa">
+            <div className="row">
+              <div className="col-md">
+                <img className="img-fluid mx-auto d-block" src={store} alt="person" width="" />
+              </div>
+              <div className="col-md marginTxt">
+                <h1 className="mb-5 mt-5 tip">Store your cards</h1>
+                <p className="fitText">
+                  If you have credit/debit or prepaid cards, store that like
+                  have a phisical wallet in your phone everything your private data we have stored securely, allow you to purchase and send money withot leave your information
+                </p>
+              </div>
             </div>
           </div>
+
+          <div className="spa">
+            <div className="row">
+              <div className="col-md marginTxt1">
+                <h1 className="mb-5 mt-5 tip t1">Send Money</h1>
+                <p className="fitText1">Like text with a friend , you can send and receive money between friends and family in seconds, pay on stores, e-commerce and split your bills like sharing a photo in whatsapp</p>
+              </div>
+              <div className="col-md">
+                <img className="img-fluid mx-auto d-block" src={send} alt="person" width="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="spa">
+            <div className="row">
+              <div className="col-md">
+                <img className="img-fluid mx-auto d-block " src={pay} alt="person" width="" />
+              </div>
+              <div className="col-md marginTxt2">
+                <h1 className="mb-5 mt-5 tip">Pay in Stores</h1>
+                <p className="fitText">without swipe your card, without share your card information pay scanning a QR code in physical stores</p>
+                <p className="fitText">If you are a merchant you can use Fruit to receive card payments without install a card reader</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="spa">
+            <h1 className="mb-5 mt-5 tip t1">Pay on websites</h1>
+            <div className="row">
+              <div className="col-md">
+                <img className="web img-fluid mx-auto d-block " src={web} alt="person" width="" />
+              </div>
+              <div className="col-md">
+                <p className="fitText">One secure way to pay online without leave your card information on the page, also if you have a Online business you can set your online payments easy</p>
+                <p className="fitText">if you can, try to pay scanning a QR code</p>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div className="mates"></div>
-        <div className="mates mt-5"></div>  
       </section>
     </div>
   )

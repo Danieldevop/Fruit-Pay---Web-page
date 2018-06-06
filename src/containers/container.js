@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import Layout from '../components/layout'
 import Header from '../components/header'
 import Section2 from '../components/section2.jsx'
-import img from '../img/moneyx.png'
-import img2 from '../img/amex.png'
+
+
 
 
 class Container extends Component {
@@ -12,20 +13,10 @@ class Container extends Component {
   
   render() {
     return (
-      <div>
-        <Header
-          widthLogo={125}
-          img={img}
-          hrefLogo={'index.html'}
-          link1={'Pricing'}
-          link2={'FAQ'}
-          imgPrincipal={img2}
-          imgPrincipalWidth={500}
-          eventClick={this.handleClick}
-          btnTxt={'SEND NOW'}
-        />
+      <Layout>
+        <Header eventClick={this.handleClick} />
         <Section2 />
-      </div>
+      </Layout>
     )
   }
 }

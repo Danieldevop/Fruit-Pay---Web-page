@@ -1,0 +1,85 @@
+.intro {
+  color: #5f6469;
+  font-size: 22px;
+  font-weight: 520;
+  margin-right: 80px;
+}
+.space {
+  padding-top: 80px;
+}
+.header{
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.font1 {
+  color: rgb(29, 29, 29);
+  margin-top: 140px;
+  text-align: left;      
+}
+.global {
+  color: #0F63ED;
+}
+.space1{
+  margin-bottom: 20px;
+}
+.btn0 {
+  background: #0F63ED;
+  color: white;
+  text-shadow: 0 1px 3px rgba(185, 185, 185, 0.4);
+  box-shadow: 0 7px 14px 0 rgba(49,49,93,0.10),
+              0 3px 6px 0 rgba(0,0,0,0.08);
+  border-radius: 20px;
+  border: 0;
+  padding: 5px 10px 5px 10px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 38px;
+  outline: none;
+  cursor: pointer;
+}
+.btn0:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}   
+/* END ANIMATIONS */
