@@ -10,53 +10,131 @@ body{
   font-weight: 600; 
   src: url("https://sp-bootstrap.global.ssl.fastly.net/8.2.4/fonts/circular-black.woff2") format("woff2"), url("https://sp-bootstrap.global.ssl.fastly.net/8.2.4/fonts/circular-black.woff") format("woff"); 
 }
-.container {
-  max-width: 1300px;
-}
 
 /*Responsive */
 
 @media (max-width: 1920px) {
+  .mobile {
+    display: none;
+  }
   .font1 {
     font-size: 70px;   
   }
 }
 
 @media (max-width: 1366px) {
+  .mobile {
+    display: none;
+  }
   .font1 {
-    font-size: 50px;
-    margin-top: 200px;
+    font-size: 60px;
+    margin-top: 110px;
+    margin-left: 70px;
     text-align: left;          
   }
   .wave3 {
     margin-top: 90px;
   }
+  .intro {
+    margin-left: 70px;
+  }
+  .space {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .fitText {
+    font-size: 20px;
+  }
+  .spa {
+    margin-top: 90px;
+  }
   
 }
 @media (max-width: 1280px) {
-  .font1 {
-    font-size: 51px;
-    margin-top: 200px;
-    text-align: left;        
+  .mobile {
+    display: none;
   }
-  .btn0 {
-    font-size: 16px;
+  .font1 {
+    font-size: 60px;
+    margin-top: 110px;
+    margin-left: 0px;
+    text-align: left;          
   }
   .wave3 {
     width: 520px;
   }
+  .intro {
+    margin-left: 0px;
+  }
+  .space {
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .fitText {
+    font-size: 19px;
+  }
+  .fitText1 {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+  .spa {
+    margin-top: 80px;
+  }
+  .btn0 {
+    font-size: 21px;
+  }
+  .container {
+    max-width: 1100px;
+  }
+  .mates {
+    padding: 220px 0 30px 0;
+  }
+  
 
 }
 
 @media (max-width: 1024px) {
+  .mobile {
+    display: none;
+  }
   .font1 {
     font-size: 50px;
-    margin-top: 150px;
-    margin-left: 70px;
-    text-align: left;        
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: left;          
+  }
+  .intro {
+    margin-left: 50px;
+  }
+  .space {
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .fitText {
+    font-size: 19px;
+    margin-right: 45px;
+  }
+  .fitText1 {
+    font-size: 19px;
+    margin-right: 20px;
+  }
+  .spa {
+    margin-top: 70px;
   }
   .btn0 {
-    font-size: 17px;
+    font-size: 21px;
+  }
+  .container {
+    max-width: 970px;
+  }
+  .mates {
+    padding: 310px 0 10px 0;
   }
   .wave3 {
     width: 430px;
@@ -67,29 +145,56 @@ body{
     width: 400px;
     margin-top: 11%;
   }
-  .wave {
-    padding: 5px 0 10px 0;
-  }
-  .wave1 {
-    padding: 50px 0 30px 0;
-  }
  
 }
 @media (max-width: 960px) {
+  .mobile {
+    display: none;
+  }
   .font1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 100px;
-    margin-left: 0px;
-    text-align: left;    
+    margin-left: 60px;
+    text-align: left;          
   }
-  .btn0 {
-    font-size: 17px;
+  .intro {
+    margin-left: 60px;
+    font-size: 18px;
   }
-  .p1 {
+  .space {
+    padding-top: 30px;
+  }
+  h1 {
     font-size: 35px;
   }
-  .pretext p {
-    font-size: 15px;
+  .fitText {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .fitText1 {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .spa {
+    margin-top: 50px;
+  }
+  .img-fit {
+    margin-top: 40px;
+  }
+  .img-fit1 {
+    margin-top: 70px;
+  }
+  .marginTxt2 {
+    margin-top: 50px;
+  }
+  .btn0 {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .mates {
+    padding: 310px 0 10px 0;
   }
   .wave3 {
     width: 400px;
@@ -100,29 +205,57 @@ body{
     width: 390px;
     margin-top: 11%;
   }
-  .wave {
-    padding: 5px 0 45px 0;
-  }
-  .wave1 {
-    display: none;
-  }
-  .tip {
-    font-size: 35px;
-  }
   
 }
 
 @media (max-width: 768px) {
-  .font1 {
-    font-size: 30px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .space {
-    margin-top: 80px;
+  .mobile {
+    display: none;
   }
   .font1 {
     font-size: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: left;          
+  }
+  .intro {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .space {
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .fitText {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .fitText1 {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .spa {
+    margin-top: 30px;
+  }
+  .img-fit {
+    margin-top: 80px;
+  }
+  .img-fit1 {
+    margin-top: 90px;
+  }
+  .marginTxt2 {
+    margin-top: 20px;
+  }
+  .btn0 {
+    font-size: 17px;
+  }
+  .container {
+    max-width: 700px;
+  }
+  .mates {
+    padding: 200px 0 100px 0;
   }
   .wave2 {
     padding: 50px 0 70px 0;
@@ -134,26 +267,91 @@ body{
     padding: 50px 0 50px 0;
     margin-top: 30px;
   }
-  .tip {
-    font-size: 30px;
-  }
   
 }
 
 @media (max-width: 575px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .phoneImg {
+    margin-top: 20px; 
+  }
   .font1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+    margin: 0px 10px 15px;
+    padding: 20px 30px;
+  }
+  .intro {
+    margin-left: 0px;
+    font-size: 1.375rem;
+    margin-right: 0px;
+    text-align: center;
+    margin: 0 10px 32px;
+  }
+  h1 {
     font-size: 35px;
-    margin-top: 30px;
     text-align: center;
   }
+  .fitText {
+    font-size: 1rem;
+    margin-right: 0px;
+    text-align: center;
+    margin: 0 30px 22px;
+  }
+  .fitText1 {
+    font-size: 1rem;
+    margin-right: 0px;
+    text-align: center;
+    margin: 0 30px 32px;
+  }
+  .fitmar {
+    margin-bottom: 70px;
+  }
+  .spa {
+    margin-top: 20px;
+  }
+  .img-fit {
+    margin-top: 25px;
+  }
+  .img-fit1 {
+    margin-top: 20px;
+  }
+  .marginTxt1 {
+    margin-top: 0px;
+  }
+  .marginTxt2 {
+    margin-top: 0px;
+  }
+  .mt-5 {
+    margin-top: 3rem !important;
+  }
+  .btn0 {
+    font-size: 17px;
+  }
+  .container {
+    max-width: 400px;
+  }
+  .mates {
+    display: none;
+  }
   .space {
-    margin-top: 30px;
+    padding-top: 0px;
   }
   .wave3 {
-    width: 360px;
+    display: none
   }
   .wave2{
-    width: 350px;
+    display: none;
+  }
+  .web {
+    margin-bottom: 40px;
   }
 }
 
