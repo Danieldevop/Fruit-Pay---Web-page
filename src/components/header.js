@@ -20,15 +20,15 @@ const Header = (props) => (
           <div className="col-sm">
             <p className="font1">Payments made <span className="global">simple</span></p>
             <p className="intro">
-              Send and receive money like chatting with your
-              friends, all over the world and pay on stores
-              websites with Qr codes.
+              Send and receive money just like chatting
+              with your friends, all over the world and
+              pay on stores and websites using Qr codes.
             </p>
           </div>
           <div className="col-sm">
             <img className="img-fluid mx-auto d-block " alt="fruit" src={img2} width="500" height="" />
             <div className="d-flex justify-content-center space1">
-              <button className="btn-lg btn0 px-5 mt-3" onClick={props.eventClick} >
+              <button className="btn0 px-5 mt-3" onClick={props.eventClick} >
                 <svg width="15" height="12">
                   <polygon fill="white" points="5.400004932295694 6.000000986459138 0.8000049322956935 9.700000986459138 2.1000049322956933 11.300000986459139 8.600004932295693 6.000000986459138 2.1000049322956933 0.7000009864591387 0.8000049322956935 2.3000009864591386"></polygon>
                 </svg>
@@ -44,7 +44,7 @@ const Header = (props) => (
           <div className="col-sm">
             <img className="img-fluid mx-auto d-block phoneImg" alt="fruit" src={img2} width="500" height="" />
             <div className="d-flex justify-content-center space1">
-              <button className="btn-lg btn0 px-5 mt-3" onClick={props.eventClick} >
+              <button className="btn0 px-5 mt-3" onClick={props.eventClick} >
                 <svg width="15" height="12">
                   <polygon fill="white" points="5.400004932295694 6.000000986459138 0.8000049322956935 9.700000986459138 2.1000049322956933 11.300000986459139 8.600004932295693 6.000000986459138 2.1000049322956933 0.7000009864591387 0.8000049322956935 2.3000009864591386"></polygon>
                 </svg>
@@ -55,9 +55,9 @@ const Header = (props) => (
           <div className="col-sm">
             <p className="font1">Payments made <span className="global">simple</span></p>
             <p className="intro">
-              Send and receive money like chatting with your
-              friends, all over the world and pay on stores
-              websites with Qr codes.
+              Send and receive money just like chatting
+              with your friends, all over the world and
+              pay on stores and websites using Qr codes.
             </p>
           </div>
         </div>

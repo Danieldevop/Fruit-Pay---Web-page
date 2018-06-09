@@ -21,10 +21,11 @@ function Section2(props) {
               <div className="col-md marginTxt">
                 <h1 className="mb-5 mt-5 tip">Store your cards</h1>
                 <p className="fitText">
-                  If you have credit/debit or prepaid cards, store that like
-                  have a phisical wallet in your phone everything your private
-                  data we have stored securely, allow you to purchase and send
-                  money withot leave your information.
+                  If you have credit/debit or prepaid cards,
+                  store them like a physical wallet in your phone.
+                  We then store your private data securely, allowing
+                  you to purchase and send money without typing your
+                  information.
                 </p>
               </div>
             </div>
@@ -35,11 +36,10 @@ function Section2(props) {
               <div className="col-md marginTxt1">
                 <h1 className="mb-5 mt-5 tip t1">Send Money</h1>
                 <p className="fitText1">
-                  Like text with a friend, you can send
-                  and receive money between friends and
-                  family in seconds, pay on stores, e-commerce
-                  and split your bills like sharing a photo in
-                  whatsapp.
+                  Just like texting with friends, you can send
+                  and receive money between family and friends
+                  in seconds, pay on stores, and split your bills
+                  like sharing a photo in whatsapp.
                 </p>
               </div>
               <div className="col-md">
@@ -56,15 +56,14 @@ function Section2(props) {
               <div className="col-md marginTxt2">
                 <h1 className="mb-5 mt-5 tip">Pay in Stores</h1>
                 <p className="fitText">
-                  without swipe your card, without
-                  share your card information pay
-                  scanning a QR code in physical stores.
+                  without swiping your card or sharing your
+                  card information, pay scanning a QR code
+                  in physical stores.
                 </p>
                 <p className="fitText">
-                  If you are a merchant you
-                  can use Fruit to receive card
-                  payments without install a card
-                  reader.
+                  If you are a business you can use Fruit to
+                  receive card payments without installing a
+                  card reader.
                 </p>
               </div>
             </div>
@@ -78,12 +77,11 @@ function Section2(props) {
               </div>
               <div className="col-md">
                 <p className="fitText">
-                  One secure way to pay online
-                  without leave your card information
-                  on the page, also if you have a Online
-                  business you can set your online payments easy.
+                  One secure way to pay online without leaving your card
+                  information on the page, also if you have an Online
+                  business you can set your online payments easily using
+                  Qr codes.
                 </p>
-                <p className="fitText fitmar">if you can, try to pay scanning a QR code.</p>
               </div>
             </div>
           </div>
@@ -100,11 +98,12 @@ function Section2(props) {
               </div>
               <div className="col-md">
                 <h1 className="mb-3 mt-5 tip">Store your cards</h1>
-                <p className="fitText fitmar">
-                  If you have credit/debit or prepaid cards, store that like
-                  have a phisical wallet in your phone everything your private
-                  data we have stored securely, allow you to purchase and send
-                  money withot leave your information.
+                <p className="fitText">
+                  If you have credit/debit or prepaid cards,
+                  store them like a physical wallet in your phone.
+                  We then store your private data securely, allowing
+                  you to purchase and send money without typing your
+                  information.
                 </p>
               </div>
             </div>
@@ -117,12 +116,11 @@ function Section2(props) {
               </div>
               <div className="col-md marginTxt1">
                 <h1 className="mb-3 mt-5 tip t1">Send Money</h1>
-                <p className="fitText1 fitmar">
-                  Like text with a friend, you can send
-                  and receive money between friends and
-                  family in seconds, pay on stores, e-commerce
-                  and split your bills like sharing a photo in
-                  whatsapp.
+                <p className="fitText1">
+                  Just like texting with friends, you can send
+                  and receive money between family and friends
+                  in seconds, pay on stores, and split your bills
+                  like sharing a photo in whatsapp.
                 </p>
               </div>
             </div>
@@ -136,15 +134,14 @@ function Section2(props) {
               <div className="col-md marginTxt2">
                 <h1 className="mb-3 mt-5 tip">Pay in Stores</h1>
                 <p className="fitText">
-                  without swipe your card, without
-                  share your card information pay
-                  scanning a QR code in physical stores.
+                  without swiping your card or sharing your
+                  card information, pay scanning a QR code
+                  in physical stores.
                 </p>
-                <p className="fitText fitmar">
-                  If you are a merchant you
-                  can use Fruit to receive card
-                  payments without install a card
-                  reader.
+                <p className="fitText">
+                  If you are a business you can use Fruit to
+                  receive card payments without installing a
+                  card reader.
                 </p>
               </div>
             </div>
@@ -158,12 +155,11 @@ function Section2(props) {
               <div className="col-md">
                 <h1 className="mb-3 mt-2 tip t1">Pay on websites</h1>
                 <p className="fitText">
-                  One secure way to pay online
-                  without leave your card information
-                  on the page, also if you have a Online
-                  business you can set your online payments easy.
+                  One secure way to pay online without leaving your card
+                  information on the page, also if you have an Online
+                  business you can set your online payments easily using
+                  Qr codes.
                 </p>
-                <p className="fitText fitmar">if you can, try to pay scanning a QR code.</p>
               </div>
             </div>
           </div>
